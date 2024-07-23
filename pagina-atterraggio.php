@@ -4,7 +4,7 @@ $name = $_GET['name'];
 $lastname = $_GET['lastname'];
 
 
-$censura = str_replace('///','name',$name);
+$censura = str_replace($name,'name','***');
 $lunghezza_testo_originale = strlen($lastname);
 
 ?>
