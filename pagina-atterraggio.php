@@ -3,6 +3,9 @@
 $name = $_GET['name'];
 $lastname = $_GET['lastname'];
 
+
+$censura = str_replace("name","***", $name);
+
 ?>
 
 
@@ -16,7 +19,7 @@ $lastname = $_GET['lastname'];
 </head>
 <body>
 
-<h1>Grazie <?php echo $name ?> <?php echo $lastname ?> per averci scritto</h1>
+<h1>Grazie <?php echo $censura ?> <?php echo $lastname ?> per averci scritto</h1>
   
 </body>
 </html>
